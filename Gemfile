@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'rails', '>= 5.0.0.beta1', github: 'rails/rails'
+gem 'rails', '4.2.4'
 gem 'sass-rails', '~> 5.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'turbolinks'
