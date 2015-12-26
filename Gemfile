@@ -5,6 +5,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'turbolinks'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'aws-sdk', '~> 2'
+gem 'sqlite3'
 
 group :development, :test do
   gem 'byebug'
