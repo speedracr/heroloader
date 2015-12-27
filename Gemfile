@@ -10,6 +10,7 @@ gem 'aws-sdk', '~> 2'
 gem 'puma'
 gem 'figaro'
 gem 'jquery-rails'
+gem 'uglifier'
 
 group :development, :test do
   gem 'byebug'
