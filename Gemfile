@@ -7,7 +7,6 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'turbolinks'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'aws-sdk', '~> 2'
-gem 'sqlite3'
 gem 'puma'
 gem 'figaro'
 
@@ -16,6 +15,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'sqlite3'
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
