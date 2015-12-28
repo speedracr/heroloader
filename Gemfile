@@ -11,6 +11,7 @@ gem 'puma'
 gem 'figaro'
 gem 'jquery-rails'
 gem 'uglifier'
+gem 'haml'
 
 group :development, :test do
   gem 'byebug'
