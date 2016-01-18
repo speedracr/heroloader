@@ -20,6 +20,7 @@ $(function() {
       dataType:           'XML',
       replaceFileInput:   false,
       progressall: function(e, data) {
+        console.log("Starting upload...");
         submitButton.prop('disabled', true);
 
         progressBar.
@@ -31,6 +32,7 @@ $(function() {
       done: function(e, data) {
         submitButton.prop('disabled', false);
         progressBar.text("Uploading done");
+        console.log("Upload completed.");
 
         // extract key and generate URL from response
         var key     = $(data.jqXHR.responseXML).find("Key").text();
