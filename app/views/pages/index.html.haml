@@ -1,3 +1,46 @@
-%h1 Hello world!
+.container
+  .row
+    .col-md-12
+      %h1 Hello world!
+      %h2 Upload-a-matic
 
-%h2 Upload-a-matic
+    .col-md-10
+      %table.table.table-hover.data-table
+        %thead
+          %tr
+            %th Query
+            %th
+              %a{href: '#', class: 'expand'}
+                Sum completes
+                %span.glyphicon.glyphicon-chevron-right
+            %th.exp1 More completes
+            %th.exp2 Even more completes
+            %th Realz important
+
+        %tfoot
+          %tr.success
+            %td Sum
+            %td 321
+            %td.exp1 421
+            %td.exp2 521
+            %td 42
+
+        %tbody
+          %tr
+            %td 20-30
+            %td 12
+            %td.exp1 10
+            %td.exp2 2
+            %td 23
+          %tr
+            %td 31-40
+            %td 50
+            %td.exp1 10
+            %td.exp2 40
+            %td 46
+          %tr
+            %td 41-50
+            %td 30
+            %td.exp1 2
+            %td.exp2 28
+            %td 21

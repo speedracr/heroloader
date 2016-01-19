@@ -12,6 +12,7 @@ gem 'figaro'
 gem 'jquery-rails'
 gem 'uglifier'
 gem 'haml'
+gem 'bootstrap-sass'
 
 group :development, :test do
   gem 'byebug'

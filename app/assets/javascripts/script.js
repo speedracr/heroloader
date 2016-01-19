@@ -3,7 +3,15 @@ $(document).ready(function() {
 });
 
 $(function() {
+  $('.expand').click(function() {
+    $('.exp1').toggle();
+    $('.exp2').toggle();
+  })
+});
+
+$(function() {
   $('.directUpload').find("input:file").each(function(i, elem) {
+    console.log("Starting");
     var fileInput     = $(elem);
     var form          = $(fileInput.parents('form:first'));
     var submitButton  = form.find('input[type="submit"]');
@@ -20,13 +28,13 @@ $(function() {
       dataType:           'XML',
       replaceFileInput:   false,
       progressall: function(e, data) {
-        console.log("Starting upload...");
+        console.log(data);
         submitButton.prop('disabled', true);
 
         progressBar.
           css('background', 'green').
           css('display', 'block').
-          css('width', '0%').
+          css('width', (data.loaded / data.total))
           text("Loading...");
       },
       done: function(e, data) {
