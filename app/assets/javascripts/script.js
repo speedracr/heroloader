@@ -3,13 +3,6 @@ $(document).ready(function() {
 });
 
 $(function() {
-  $('.expand').click(function() {
-    $('.exp1').toggle();
-    $('.exp2').toggle();
-  })
-});
-
-$(function() {
   $('.directUpload').find("input:file").each(function(i, elem) {
     console.log("Starting");
     var fileInput     = $(elem);

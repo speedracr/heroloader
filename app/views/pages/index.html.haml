@@ -10,11 +10,17 @@
           %tr
             %th Query
             %th
-              %a{href: '#', class: 'expand'}
+              %a{href: '#', class: 'toggle-button', data: { target: 'exp1'} }
                 Sum completes
                 %span.glyphicon.glyphicon-chevron-right
             %th.exp1 More completes
-            %th.exp2 Even more completes
+            %th.exp1 Even more completes
+            %th
+              %a{href: '#', class: 'toggle-button', data: { target: 'exp2'} }
+                Sum more numbers
+                %span.glyphicon.glyphicon-chevron-right
+            %th.exp2 Hahaha
+            %th.exp2 Hihihih
             %th Realz important
 
         %tfoot
@@ -22,7 +28,10 @@
             %td Sum
             %td 321
             %td.exp1 421
-            %td.exp2 521
+            %td.exp1 521
+            %td 2356
+            %td.exp2 1345
+            %td.exp2 345
             %td 42
 
         %tbody
@@ -30,17 +39,26 @@
             %td 20-30
             %td 12
             %td.exp1 10
-            %td.exp2 2
+            %td.exp1 2
+            %td 2356
+            %td.exp2 324
+            %td.exp2 345
             %td 23
           %tr
             %td 31-40
             %td 50
             %td.exp1 10
-            %td.exp2 40
+            %td.exp1 40
+            %td 4666
+            %td.exp2 325
+            %td.exp2 324
             %td 46
           %tr
             %td 41-50
             %td 30
             %td.exp1 2
-            %td.exp2 28
+            %td.exp1 28
+            %td 4959
+            %td.exp2 3535
+            %td.exp2 2435
             %td 21
