@@ -5,3 +5,4 @@
 //= require jquery.fileupload
 //= require script
 //= require super
+//= require refine
